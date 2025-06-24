@@ -1,8 +1,10 @@
+# react-router-7 with framework mode double rendering issue when NavLink is being used
+
 console.log("App") in root.tsx is logging/rendering twice (not sure if this is expected)
 
 This only happens when the root has a component that calls NavLink. Removing NavLink makes the root render only once.
 
-# Detailed bug explanation
+## Detailed bug explanation
 
 In `root.tsx`:
 
